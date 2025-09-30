@@ -1,0 +1,163 @@
+ body {
+	background-color:#3da0c2 ;
+	font-family:sans-serif ;
+	margin: 0;
+	padding: 0;
+}
+
+ header {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color:#ffffffh;
+}
+
+nav ul li {
+	margin: 0.15px;
+}
+nav ul li a {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.hero img {
+	width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery {
+	display: flex;
+	 flex-wrap: wrap;
+	 gap: 20px;
+	 justify-content: center;
+	 padding: 30px;
+	 float: center;
+	 width: 180px;
+	 
+}
+
+img {
+	height: 180px;
+	width: 180px;
+}
+
+
+
+.item {
+	width: 180px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 2.0);
+}
+
+.media {
+	text-align: center;
+	padding: 20px;
+}
+
+.dance-instruments {
+	padding: 20px;
+}
+
+article {
+	background-color: #ffffff;
+	margin-bottom: 15px;
+	padding: 15px;
+	border-left: 4px solid #898276;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+	max-width: 600px;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.contact-form input
+.contact-form select
+.contact-form textarea {
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea{
+	border-color: #000000;
+	outline: none;
+}
+
+.contact-form button {
+	margin-top: 15px;
+	padding: 12px;
+	background-color: #0077aa;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.contact-form button:hover {
+	background-color: #005f88;
+	}
+	
+	/*Mobile responsive*/
+	@media screen and (max-width: 600px){
+		.contact-form{
+			margin: 10px;
+		}
+
+	.crafts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.craft-card {
+	background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.craft-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.craft-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
